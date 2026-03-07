@@ -141,7 +141,7 @@ const Home: React.FC = () => {
             </Button>
           </div>
 
-          {/* Dashboard preview mockup */}
+          {/* Dashboard */}
           <div className="home__hero-mockup">
             <div className="home__mockup-window">
               <div className="home__mockup-bar">
