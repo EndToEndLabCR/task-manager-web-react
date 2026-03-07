@@ -1,0 +1,31 @@
+.trusted {
+  background: $white;
+  padding: $spacing-xl;
+  text-align: center;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  &__label {
+    display: block;
+    font-size: $font-size-sm;
+    color: $text-muted;
+    letter-spacing: 1.5px;
+    margin-bottom: $spacing-lg;
+    font-weight: 500;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-xl;
+    flex-wrap: wrap;
+  }
+
+  &__logo-placeholder {
+    width: 100px;
+    height: 24px;
+    background-color: #e8e8e8;
+    border-radius: $radius-sm;
+  }
+}
