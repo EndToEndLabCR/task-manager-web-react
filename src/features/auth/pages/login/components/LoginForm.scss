@@ -1,0 +1,110 @@
+.login-form {
+  &__card.ant-card {
+    width: 100%;
+    max-width: 460px;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-elevated;
+    padding: $spacing-xxl;
+
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__title.ant-typography {
+    font-size: $font-size-xxl;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__subtitle.ant-typography {
+    color: $text-muted;
+    font-size: $font-size-base;
+    margin-bottom: 0;
+  }
+
+  &__extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-lg;
+    margin-top: -$spacing-sm;
+  }
+
+  &__forgot.ant-btn-link {
+    color: $primary-color;
+    font-weight: 700;
+    padding: 0;
+    height: auto;
+  }
+
+  &__submit-btn.ant-btn {
+    height: 48px;
+    border-radius: $radius-md;
+    font-weight: 600;
+    margin-top: $spacing-sm;
+  }
+
+  &__divider-text {
+    font-size: $font-size-sm;
+    color: $text-muted;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
+
+  &__social-buttons {
+    display: flex;
+    gap: $spacing-md;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__social-btn.ant-btn {
+    flex: 1;
+    height: 44px;
+    border-radius: $radius-md;
+    border-color: $border-color;
+    color: $text-primary;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      border-color: $primary-color;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__google-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &__signup {
+    text-align: center;
+    padding-top: $spacing-md;
+  }
+
+  &__signup-link.ant-btn-link {
+    color: $primary-color;
+    font-weight: 700;
+    padding: 0;
+    height: auto;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    &__card.ant-card {
+      padding: $spacing-lg $spacing-md;
+    }
+
+    &__social-buttons {
+      flex-direction: column;
+    }
+  }
+}
