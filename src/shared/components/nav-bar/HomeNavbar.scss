@@ -1,0 +1,64 @@
+.home-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  padding: 0 $spacing-xl;
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    font-weight: 700;
+    font-size: $font-size-md;
+    color: $text-primary;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: $primary-color;
+    color: $white;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+
+  &__links {
+    display: flex;
+    gap: $spacing-xl;
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: $text-secondary;
+    font-size: $font-size-base;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover { color: $primary-color; }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+  }
+}

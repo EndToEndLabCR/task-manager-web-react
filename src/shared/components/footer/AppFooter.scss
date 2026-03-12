@@ -1,0 +1,31 @@
+.app-footer {
+  text-align: center;
+  padding: $spacing-lg $spacing-md;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  align-items: center;
+
+  &__links {
+    display: flex;
+    gap: $spacing-lg;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__link {
+    color: $text-muted;
+    font-size: $font-size-sm;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__copy {
+    color: $text-muted;
+    font-size: $font-size-sm;
+  }
+}

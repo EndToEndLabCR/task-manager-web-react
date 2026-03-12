@@ -1,0 +1,10 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-color;
+
+  &__main {
+    flex: 1;
+  }
+}

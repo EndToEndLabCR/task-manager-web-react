@@ -1,16 +1,25 @@
 import { Button } from "antd";
 import "./App.css";
 
-function App() {
-  const title = "Template Web React";
+import { ConfigProvider } from "antd";
+import esES from "antd/locale/es_ES";
+import AppRouter from "./routing/AppRouter";
 
+const App: React.FC = () => {
   return (
-    <>
-      <h1>{title}</h1>
-      <p> This is a base web react</p>
-      <Button type="primary">Click me</Button>
-    </>
+    <ConfigProvider
+      locale={esES}
+      theme={{
+        token: {
+          colorPrimary: "#1677ff",
+          borderRadius: 8,
+          fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        },
+      }}
+    >
+      <AppRouter />
+    </ConfigProvider>
   );
-}
+};
 
 export default App;

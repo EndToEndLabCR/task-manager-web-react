@@ -1,0 +1,160 @@
+.hero {
+  background: linear-gradient(180deg, #eef2ff 0%, $secondary-color 100%);
+  padding: $spacing-xxl $spacing-xl 0;
+  text-align: center;
+  overflow: hidden;
+
+  &__content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  &__title.ant-typography {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    color: $text-primary;
+    line-height: 1.2;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__subtitle.ant-typography {
+    font-size: $font-size-md;
+    color: $text-secondary;
+    max-width: 520px;
+    margin: 0 auto $spacing-xl;
+    line-height: 1.7;
+  }
+
+  &__actions {
+    display: flex;
+    gap: $spacing-md;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: $spacing-xxl;
+  }
+
+  &__btn-primary.ant-btn {
+    border-radius: $radius-md;
+    font-weight: 600;
+    height: 48px;
+    padding: 0 $spacing-xl;
+  }
+
+  &__btn-secondary.ant-btn {
+    border-radius: $radius-md;
+    font-weight: 600;
+    height: 48px;
+    padding: 0 $spacing-xl;
+
+    &:hover {
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  &__mockup {
+    max-width: 680px;
+    margin: 0 auto;
+    filter: drop-shadow($shadow-elevated);
+  }
+
+  &__mockup-window {
+    background: $white;
+    border-radius: $radius-lg $radius-lg 0 0;
+    border: 1px solid $border-color;
+    overflow: hidden;
+  }
+
+  &__mockup-bar {
+    background: #f5f5f5;
+    padding: $spacing-sm $spacing-md;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__mockup-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    &:nth-child(1) { background-color: #ff5f57; }
+    &:nth-child(2) { background-color: #febc2e; }
+    &:nth-child(3) { background-color: #28c840; }
+  }
+
+  &__mockup-content {
+    display: flex;
+    height: 260px;
+    overflow: hidden;
+  }
+
+  &__mockup-sidebar {
+    width: 160px;
+    border-right: 1px solid $border-color;
+    padding: $spacing-md;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    flex-shrink: 0;
+
+    @media (max-width: $breakpoint-sm) { display: none; }
+  }
+
+  &__mockup-menu-item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    padding: 6px $spacing-sm;
+    border-radius: $radius-sm;
+
+    &:first-child { background: #eff6ff; }
+  }
+
+  &__mockup-menu-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    flex-shrink: 0;
+  }
+
+  &__mockup-menu-label {
+    font-size: $font-size-sm;
+    color: $text-secondary;
+  }
+
+  &__mockup-main {
+    flex: 1;
+    padding: $spacing-md;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    overflow: hidden;
+  }
+
+  &__mockup-task-row {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  &__mockup-task-check {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid $border-color;
+    flex-shrink: 0;
+  }
+
+  &__mockup-task-text {
+    font-size: $font-size-sm;
+    color: $text-secondary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

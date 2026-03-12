@@ -1,0 +1,62 @@
+.cta {
+  background: linear-gradient(135deg, #1677ff 0%, #003eb3 100%);
+  padding: $spacing-xxl $spacing-xl;
+  text-align: center;
+
+  &__content {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  &__title.ant-typography {
+    color: $white;
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 700;
+    margin-bottom: $spacing-md;
+  }
+
+  &__subtitle.ant-typography {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: $font-size-base;
+    line-height: 1.7;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__actions {
+    display: flex;
+    gap: $spacing-md;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__btn-primary.ant-btn {
+    background: $white;
+    color: $primary-color;
+    font-weight: 600;
+    border: none;
+    border-radius: $radius-md;
+    height: 48px;
+    padding: 0 $spacing-xl;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.9) !important;
+      color: $primary-color !important;
+    }
+  }
+
+  &__btn-secondary.ant-btn {
+    background: transparent;
+    color: $white;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: $radius-md;
+    height: 48px;
+    padding: 0 $spacing-xl;
+
+    &:hover {
+      border-color: $white !important;
+      color: $white !important;
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+  }
+}
