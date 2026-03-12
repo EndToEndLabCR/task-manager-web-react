@@ -1,0 +1,48 @@
+.app-navbar {
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  padding: 0 $spacing-xl;
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    font-weight: 700;
+    font-size: $font-size-md;
+    color: $text-primary;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: $primary-color;
+    color: $white;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+
+  &__help-link {
+    color: $primary-color;
+    font-size: $font-size-base;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
