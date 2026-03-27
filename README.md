@@ -1,7 +1,8 @@
 # TaskFlow
 
-A modern task management web app built with React, TypeScript and Ant Design. Helps teams organize projects, track tasks and collaborate efficiently.
+TaskFlow is a full-featured task management application built with React 18, TypeScript and Ant Design. 
 
+It allows teams and individuals to organize work into projects, manage tasks with priorities and deadlines, and track progress through an intuitive dashboard. Designed for project managers, developers and teams who need a clean and efficient way to stay on top of their work.
 ## 📑 Table of Contents
 
 - [Project Name](#project-name)
@@ -28,9 +29,12 @@ A modern task management web app built with React, TypeScript and Ant Design. He
 
 ## 🛠️ Technologies Used
 
-- [Tech 1](https://link-to-tech.com)
-- [Tech 2](https://link-to-tech.com)
-- [Tech 3](https://link-to-tech.com)
+- [React 18](https://react.dev) — UI library with hooks and functional components
+- [TypeScript](https://www.typescriptlang.org) — Static typing for safer, more maintainable code
+- [Vite](https://vitejs.dev) — Fast build tool and development server
+- [Ant Design](https://ant.design) — UI component library
+- [React Router v6](https://reactrouter.com) — Client-side routing and navigation
+- [SCSS](https://sass-lang.com) — CSS preprocessor with BEM methodology
 
 ## 🚀 Getting Started
 
