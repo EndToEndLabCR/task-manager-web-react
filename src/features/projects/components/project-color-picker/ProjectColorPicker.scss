@@ -1,0 +1,33 @@
+.project-color-picker {
+  display: flex;
+  gap: $spacing-sm;
+  flex-wrap: wrap;
+
+  &__swatch {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, border-color 0.2s;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    &--selected {
+      border-color: $white;
+      outline: 2px solid $primary-color;
+      transform: scale(1.15);
+    }
+  }
+
+  &__check {
+    color: $white;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}

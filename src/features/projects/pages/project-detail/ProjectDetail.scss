@@ -1,0 +1,41 @@
+.project-detail {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__breadcrumb {
+    margin-bottom: 1.5rem;
+  }
+
+  &__back {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem !important;
+    color: #1f2937;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+  &--not-found {
+    @extend .project-detail;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  &__updated {
+    display: block;
+    margin-top: 8px;
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+}
+

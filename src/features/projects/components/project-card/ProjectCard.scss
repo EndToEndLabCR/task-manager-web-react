@@ -1,0 +1,106 @@
+.project-card {
+  position: relative;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: $white;
+
+  &:hover {
+    box-shadow: $shadow-elevated;
+    transform: translateY(-2px);
+  }
+
+  .ant-card-body {
+    padding: 0;
+  }
+
+  &__color-bar {
+    width: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: $radius-lg 0 0 $radius-lg;
+  }
+
+  &__body {
+    padding: $spacing-lg $spacing-lg $spacing-lg calc($spacing-lg + 4px);
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $spacing-sm;
+  }
+
+  &__name {
+    font-size: $font-size-md;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 1.4;
+  }
+
+  &__menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $text-muted;
+    font-size: 18px;
+    padding: 2px 4px;
+    border-radius: $radius-sm;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: $secondary-color;
+      color: $text-primary;
+    }
+  }
+
+  &__description.ant-typography {
+    color: $text-secondary;
+    font-size: $font-size-base;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $spacing-sm;
+    padding-top: $spacing-sm;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  &__tasks {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+  }
+
+  &__tasks-icon {
+    color: $text-muted;
+    font-size: 13px;
+  }
+
+  &__tasks-count {
+    font-size: $font-size-sm;
+    font-weight: 600;
+    color: $text-secondary;
+    letter-spacing: 0.3px;
+  }
+
+  &__updated {
+    font-size: $font-size-sm;
+    color: $text-muted;
+  }
+}

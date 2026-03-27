@@ -1,0 +1,66 @@
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-xl;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+
+  &__title {
+    font-size: $font-size-xxl;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  &__btn.ant-btn {
+    border-color: $border-color;
+    color: $text-secondary;
+    border-radius: $radius-md;
+  }
+
+  &__view-toggle {
+    display: flex;
+    border: 1px solid $border-color;
+    border-radius: $radius-md;
+    overflow: hidden;
+  }
+
+  &__view-btn {
+    width: 36px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border: none;
+    cursor: pointer;
+    color: $text-muted;
+    font-size: 16px;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &--active {
+      background: $primary-color;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__new-btn.ant-btn {
+    border-radius: $radius-md;
+    font-weight: 600;
+  }
+}

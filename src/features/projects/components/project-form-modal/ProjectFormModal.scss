@@ -1,0 +1,20 @@
+.project-form-modal {
+  .ant-modal-header {
+    margin-bottom: $spacing-lg;
+  }
+
+  .ant-modal-title {
+    font-size: $font-size-lg;
+    font-weight: 700;
+    color: $text-primary;
+  }
+
+  .ant-modal-footer {
+    padding-top: $spacing-lg;
+    border-top: 1px solid $border-color;
+  }
+
+  &__form {
+    padding: $spacing-md 0;
+  }
+}

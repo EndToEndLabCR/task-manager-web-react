@@ -1,0 +1,49 @@
+.projects {
+  max-width: 1200px;  
+  margin: 0 auto;     
+  padding: 32px;
+  width: 100%;
+
+  &__skeleton {
+    background: $white;
+    border-radius: $radius-lg;
+    padding: $spacing-lg;
+  }
+
+  &__empty {
+    margin-top: $spacing-xxl;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $spacing-xl;
+    padding-top: $spacing-md;
+  }
+
+  &__count {
+    color: $text-muted;
+    font-size: $font-size-base;
+  }
+
+  &__archived-link {
+    background: none;
+    border: none;
+    color: $primary-color;
+    font-size: $font-size-base;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

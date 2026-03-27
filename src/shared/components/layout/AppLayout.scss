@@ -1,0 +1,14 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+
+  &__content {
+    flex: 1;
+    background-color: $secondary-color;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 768px) {
+      padding-bottom: 70px; 
+    }
+}
