@@ -1,6 +1,6 @@
-# Project Name
+# TaskFlow
 
-A brief description of your project. Explain what the project does, its primary purpose, and who its intended users are.
+A modern task management web app built with React, TypeScript and Ant Design. Helps teams organize projects, track tasks and collaborate efficiently.
 
 ## 📑 Table of Contents
 
